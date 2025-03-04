@@ -8,7 +8,7 @@
       text-align: center;
     }
     .bg-primary {
-      background-color: #99ccff;
+      background-color:rgb(242, 208, 214);
     }
 
     .student-container {
@@ -22,7 +22,7 @@
       border: 1px solid #ccc;
       margin: 5px;
       padding: 5px;
-      background-color: #ffdab3;
+      background-color:rgb(248, 248, 184);
       border-radius: 5px;
     }
   </style>
@@ -32,11 +32,11 @@
 
     <script>
       const students = [
-        "Aarti",
-        "Bharti",
-        "Kirti",
-        "Murti",
-        "Shakti",
+        "Arpita",
+        "Gayatri",
+        "Disha",
+        "Grace",
+        "Depali",
         "Bhakti",
       ];
 
@@ -45,7 +45,7 @@
       for (let i = 0; i < students.length; i++) {
         studentsList.innerHTML =
           studentsList.innerHTML +
-          `<div class="student-card"> Hello ${students[i]}</div>`;
+          `<div class="student-card"> ${students[i]}</div>`;
       }
     </script>
   </body>
