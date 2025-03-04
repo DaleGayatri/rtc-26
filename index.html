@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Assignment 26</title>
+  </head>
+  <style>
+    .text-center {
+      text-align: center;
+    }
+    .bg{
+      background-color:rgb(247, 247, 200);
+    }
+
+    .student-container {
+      background-color: #fff;
+      padding: 10px;
+      margin: 10px;
+      border: 2px double #ccc;
+    }
+
+    .student-card {
+      border: 1px solid #ccc;
+      margin: 5px;
+      padding: 5px;
+      background-color: #fce2c6;
+      border-radius: 5px;
+    }
+  </style>
+  <body class="bg">
+    <h1 class="text-center">Students Cards</h1>
+    <div class="student-container" id="students-list"></div>
+
+    <script>
+      const students = [
+        "Sarika",
+        "Sanjay",
+        "Kavita",
+        "Sarthak",
+        "Apeksha",
+      ];
+
+      const studentsContainer = document.getElementById("students-list");
+
+      for (let i = 0; i < students.length; i++) {
+        studentsContainer.innerHTML =
+        studentsContainer.innerHTML +
+          <div class="student-card">${students[i]}</div>;
+      }
+    </script>
+  </body>
+</html>
