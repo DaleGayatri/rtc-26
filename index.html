@@ -1,51 +1,52 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Assignment 26</title>
+    <title>Array With Loop</title>
   </head>
   <style>
     .text-center {
       text-align: center;
     }
-    .bg{
-      background-color:rgb(247, 247, 200);
+    .bg-primary {
+      background-color: #99ccff;
     }
 
     .student-container {
       background-color: #fff;
-      padding: 10px;
-      margin: 10px;
-      border: 2px double #ccc;
+      padding: 5px;
+      margin: 5px;
+      border: 4px double #ccc;
     }
 
     .student-card {
       border: 1px solid #ccc;
       margin: 5px;
       padding: 5px;
-      background-color: #fce2c6;
+      background-color: #ffdab3;
       border-radius: 5px;
     }
   </style>
-  <body class="bg">
-    <h1 class="text-center">Students Cards</h1>
+  <body class="bg-primary">
+    <h1 class="text-center">Students List</h1>
     <div class="student-container" id="students-list"></div>
 
     <script>
       const students = [
-        "Sarika",
-        "Sanjay",
-        "Kavita",
-        "Sarthak",
-        "Apeksha",
+        "Aarti",
+        "Bharti",
+        "Kirti",
+        "Murti",
+        "Shakti",
+        "Bhakti",
       ];
 
-      const studentsContainer = document.getElementById("students-list");
+      const studentsList = document.getElementById("students-list");
 
       for (let i = 0; i < students.length; i++) {
-        studentsContainer.innerHTML =
-        studentsContainer.innerHTML +
-          <div class="student-card">${students[i]}</div>
+        studentsList.innerHTML =
+          studentsList.innerHTML +
+          `<div class="student-card"> Hello ${students[i]}</div>`;
       }
     </script>
-  </body>
+  </body>
 </html>
